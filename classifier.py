@@ -19,7 +19,7 @@ from sklearn.svm import SVC
 # In[11]:
 
 instances = 6400
-file0=open("assign_5_data_0.txt",'r')
+file0=open("data_0.txt",'r')
 x0 = np.ndarray(shape=(instances,2), dtype=float, order='F')
 y0 = np.ndarray(shape=(instances,1), dtype=float, order='F')
 lineCount=0
@@ -30,8 +30,8 @@ for line in file0:
         x0[lineCount][1] = float(perRowData[1])
         y0[lineCount][0] = float(perRowData[2])
         lineCount = lineCount + 1
-    
-file1=open("assign_5_data_10.txt",'r')
+
+file1=open("data_10.txt",'r')
 x1 = np.ndarray(shape=(instances,2), dtype=float, order='F')
 y1 = np.ndarray(shape=(instances,1), dtype=float, order='F')
 lineCount=0
@@ -43,8 +43,8 @@ for line in file1:
         x1[lineCount][1] = float(perRowData[1])
         y1[lineCount][0] = float(perRowData[2])
         lineCount = lineCount + 1
-    
-file2=open("assign_5_data_20.txt",'r')
+
+file2=open("data_20.txt",'r')
 x2 = np.ndarray(shape=(instances,2), dtype=float, order='F')
 y2 = np.ndarray(shape=(instances,1), dtype=float, order='F')
 lineCount=0
@@ -56,7 +56,7 @@ for line in file2:
         y2[lineCount][0] = float(perRowData[2])
         lineCount = lineCount + 1
 
-file4=open("assign_5_data_40.txt",'r')
+file4=open("data_40.txt",'r')
 x4 = np.ndarray(shape=(instances,2), dtype=float, order='F')
 y4 = np.ndarray(shape=(instances,1), dtype=float, order='F')
 lineCount=0
@@ -67,8 +67,8 @@ for line in file4:
         x4[lineCount][1] = float(perRowData[1])
         y4[lineCount][0] = float(perRowData[2])
         lineCount = lineCount + 1
-    
-file6=open("assign_5_data_60.txt",'r')
+
+file6=open("data_60.txt",'r')
 x6 = np.ndarray(shape=(instances,2), dtype=float, order='F')
 y6 = np.ndarray(shape=(instances,1), dtype=float, order='F')
 lineCount=0
